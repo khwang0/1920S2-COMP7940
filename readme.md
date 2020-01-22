@@ -137,7 +137,7 @@ In this assignment you are required to deploy the assignment2.py **WITHOUT CHANG
 
 By inspecting the code and with some trial-and-error, state the behavior of the chatbot (what it does; no need to explain it line-by-line) on a PDF file together with the Bot ID and Bot QR code.
 
-> **Note**:  The behavior of the code is **NOT** the same as the code that was demo here:
+> **Note**:  The behavior of the code is **NOT** the same as the code that was [video demo](./LineProjectDemo.mov).
 
 <video src="./LineProjectDemo.mov" width="80%
 " controls preload></video>
