@@ -51,6 +51,11 @@ Quick Summary: You are required to continue work on the chatbot that you have bu
 
 # Detail Instructions
 
+## Working with the GitHub
+
+You should begins with [fork this repo](https://guides.github.com/activities/forking/) and clone it into your machine. Alternatively you can download the code as a zip by clicking the download button on this page. But we would suggest you to fork the project instead since you will be able to patch any update if we are going to release any new stuffs to you.
+
+
 ## Assignment 1
 
 You can find the skeleton code of Assignment 1 inside the folder `assignment1`. To begin with, you have to install Python3 with version >=3.6. We are using the [redis](https://redis.io) package and therefore you need to install redis. It is recommended to install it using `pip`. Type the following in your command prompt or terminal.
@@ -87,6 +92,28 @@ Adding a few lines of code you shall be able to communicate with the given redis
 * Return how many times of a keyword/query is typed; and
 * Increment the counter of the keyword when it is typed; and
 
+---
+### --Update : 23/1/2020
+
+The redis server (the one coded in the `assignment1.py`) now contains many [keys-value pairs](https://www.tutorialspoint.com/redis/redis_keys.htm), like:
+
+| Keys | Value |
+|---|---|
+| haha  | 1  |
+| hi  | 5  |
+|  Hello | 2  |
+| hkbu  | 1  |
+| bye  | 2  |
+|...   | ...  |
+
+Using the [tutorial here](https://redislabs.com/lp/python-redis/) to learn how to get the keys-value pair!
+
+> The tutorial does not provide complete answer (**of course it doesn't**). You might need to do some search on Google or refer to the [docs](https://redis-py.readthedocs.io/en/latest/#). Our Piazza page is a good friend for you too!
+ 
+---
+
+
+
 The expecting result is:
 ```
 Please enter your query (type 'quit' or 'exit' to end):Hi
@@ -107,7 +134,7 @@ Please enter your query (type 'quit' or 'exit' to end):quit
 
 ## Task 2
 
-Then, apply a redis service from redislab.com for free. Replace the redis server setting with your redis service. 
+Then, apply a redis service from redislabs.com for free. Replace the redis server setting with your redis service. 
 
 After this step, the counter of all keywords should be reset to 1. 
 
