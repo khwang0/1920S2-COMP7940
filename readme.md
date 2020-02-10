@@ -145,6 +145,14 @@ Submit your python code to Moodle before due day.
 
 ## Assignment 2
 
+> ---
+> Important Update:
+> ---
+> As suggested by student that the line 57-74 needs to be commented first before you can verify the webhook. After the verification you can enable that and deploy it again.
+> https://piazza.com/class/k56apf6o1n7398?cid=20
+> 
+> ---
+
 In this assignment you are required to deploy the assignment2.py **WITHOUT CHANGING** any code to Heroku. The task is complicated and easy to make mistakes. But, you should be able to do it if you follow the step properly.
 
 
