@@ -27,26 +27,38 @@ Quick Summary: With a given skeleton Python code, you are required complete the 
 
 ## Assignment 2 - Deploying your app on Cloud
 
-* Due date: 16/2/2020 (Sunday, WK5)
-* Submission method: [on Moodle](https://buelearning.hkbu.edu.hk), one single PDF with your findings and the QR code of your bot.
+* Due date: ~~16/2/2020 (Sunday, WK5)~~   **postponed to 23/2/2020 (Sunday, WK6)**
+* Submission method: [on Moodle](https://buelearning.hkbu.edu.hk), one single PDF with your findings and [the QR code of your bot (**for Line version**)  or ONE screenshot of cloud console (**for web version**)].
 * This is an individual assignment.
 * Total Mark: 12%
 
 
-Quick Summary: You are required to deploy the Python Line chatbot given to you on this repository to Heroku platform. By inspecting the code and with some trial-and-error, you need to tell us what is the behavior of the bot.
+Quick Summary:
+> --- 
+> **Updated** 
+> ---
+> There are two options given to students to finish the assignments due to the fact that some students are unable to connect to LINE server in their home. The difficulty and requirements of the these two options are similar. All students are free to choice any of these version for Assignment 2.
+
+Line Version: You are required to deploy the Python Line chatbot given to you on this repository to Heroku platform. By inspecting the code and with some trial-and-error, you need to tell us what is the behavior of the bot.
+
+Web Version: You are required to deploy the Python Web chatbot given to you on [another repository](https://github.com/khwang0/1920S2-COMP7940v2) to any cloud platform (preferably Heroku). By inspecting the code in both `test.html` and `newassignment.py` and with some trial-and-error, you need to **explain** the code line by line to explain the behavior of the bot.
 
 ## Project - a Python chatbot
 
 * Due date: 15/4/2020 (Wednesday, in class, WK14)
 * Submission method: [on Moodle](https://buelearning.hkbu.edu.hk), one single PDF report plus a presentation less than 5 minutes. Program code should be placed on GitHub for inspection.
 * This is a group project (size <= 3).
-* Total Mark: 28%
+* Total Mark: >=22%
 
 Quick Summary: You are required to continue work on the chatbot that you have built in Assignment 2. The chatbot is to provide health care advise to users. The details of the project will be announced later.
 
 
+>---
+>[Project Details](./project.md) - under construction
+>
+>---
 
-
+---
 
 
 # Detail Instructions
@@ -142,8 +154,9 @@ Submit your python code to Moodle before due day.
 
 **Again, we expect that you can complete the code and consume the redis service from the account that you have applied**
 
+---
 
-## Assignment 2
+## Assignment 2 - Line Version
 
 > ---
 > Important Update:
@@ -177,4 +190,32 @@ By inspecting the code and with some trial-and-error, state the behavior of the 
 <video src="./LineProjectDemo.mov" width="80%
 " controls preload></video>
 
+---
+
+## Assignment 2 - Web Version
+
+>---
+>Code: https://github.com/khwang0/1920S2-COMP7940v2
+>---
+
+You don't need to change any part of the code here. It works similar to the Line version where you are deploying the code to a cloud server. We use Heroku as an example. For students who have connection issue in using Heroku, you are allowed to use other cloud service. However, please carefully choice your cloud so that: 1) we would be able to access it at HKBU; 2) it would not expire by May (possibly the project submission date); 3) it does not incur any unnecessary cost in particular there is no any authentication mechanism in place, it could, technically speaking, drain up all your quota.
+
+Perform the following steps to finish this assignment. You might make some mistake in doing the following steps, be careful. As usual as on Piazza if you have any problem.
+
+1. Checkout the code from the repo of assignment 2 - web version. 
+1. Run the code in debug mode locally by
+```sh
+python newassignment.py
+```
+1. Open `test.html` on a browser and have a try. Type `http://127.0.0.1:5000/` under the field `Server Address (Heroku):`. Look at the console of your server and study that.
+1. Apply an account from Heroku
+1. Create an app on Heroku.com. Free Dyno is good enough. Unless stated otherwise, you should not register your credit card until you are fully aware what are you doing.
+1. Deploy your code `newassignment.py`, `Profile`, `requirement.txt` to heroku by using Heroku Git. (Will expand this part later, for now follow the instruction given on Heroku dashboard > `Deploy`)
+1. Look for the phrase "Your app can be found at https://yourappname.herokuapp.com" under the section `Settings` > `Domains`. Copy the url https://yourappname.herokuapp.com and add `/callback` after it.
+1. Open the log console at Heroku and inspect the output.
+1. Open `test.html` stored in your **local** folder, paste the address that you copied above to `Server Address (Heroku):` again. 
+1. Try to open another instance of `test.html` and see if there is any difference.
+
+
+By inspect the code inside `newassignment.py` and `test.html`, explain the code line by line and try to identify the technologies that we have covered in Lecture 3 (12/2/2020). Also, take a screenshot of the Heroku console tab. Prepare these into a 2 to 4 pages PDF file and submit it on moodle.
 
